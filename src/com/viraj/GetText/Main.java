@@ -28,22 +28,15 @@ public class Main {
 
 	@Test
 	public void testLetsKodeIt() throws InterruptedException {
-		driver.get(baseUrl);
-		
+		driver.get(baseUrl);	
 		WebElement OpenButton = driver.findElement(By.id("opentab"));
 		String getData = OpenButton.getText();
 		System.out.println("The name of the button is: " + getData);
-
 	}
-
-	
 
 	@After
 	public void tearDown() throws Exception {
 		Thread.sleep(2000);
 		driver.quit();
 	}
-
-
-
 }
